@@ -1,0 +1,476 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<!-- Required CSS for font sizing -->
+<style>
+.fs-7 { font-size: 0.85rem; }
+</style>
+   
+       
+
+<!-- Optional CSS for hovers -->
+<style>
+.hover-white:hover { color: #fff !important; }
+.tracking-wide { letter-spacing: 1px; }
+</style>
+
+<style>
+    .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+</style>
+<!-- CSS -->
+<style>
+.tracking-wide { letter-spacing: 1.5px; }
+.hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.hover-lift:hover { transform: translateY(-3px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important; }
+</style>
+<!-- Required CSS -->
+<style>
+.service-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.service-card:hover { transform: translateY(-10px); box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; }
+</style>
+</head>
+<body>
+   <div class="flex-center">
+    <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+    <li class="breadcrumb-item"><a href="/about.html">About</a></li>
+    
+  </ol>
+</nav>
+   </div>
+<div class="bg-dark text-light py-2 fs-7">
+    <div class="container d-flex justify-content-between align-items-center">
+    
+        <div class="d-flex gap-3 align-items-center">
+            <span><i class="bi bi-envelope me-1 text-primary"></i> info@yourdomain.com</span>
+            <span class="d-none d-md-inline"><i class="bi bi-telephone me-1 text-primary"></i> +1 234 567 8900</span>
+        </div>
+   
+        <div class="d-flex gap-3 align-items-center">
+            <div class="d-none d-sm-flex gap-2">
+                <a href="#" class="text-light text-decoration-none"><i class="bi bi-facebook"></i></a>
+                <a href="#" class="text-light text-decoration-none"><i class="bi bi-twitter-x"></i></a>
+                <a href="#" class="text-light text-decoration-none"><i class="bi bi-youtube"></i></a>
+            </div>
+            <div class="vr mx-1 d-none d-sm-block"></div>
+            <a href="login.html" class="text-light text-decoration-none fw-bold">Login / Register</a>
+        </div>
+    </div>
+</div>
+</div>
+
+<nav class="navbar navbar-expand-lg bg-body shadow-sm py-3">
+    <div class="container">
+        <!-- Brand Logo -->
+        <a class="navbar-brand fw-bold text-primary fs-4" href="#">
+            <i class="bi bi-dribbble"></i></i> mehtik
+        </a>
+        
+        <!-- Mobile Toggle -->
+        <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Nav Links -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0 fw-medium gap-lg-3">
+                <li class="nav-item"><a class="nav-link " aria-current="page" href="/index.html">Home</a></li>
+                 <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Resume.html">Resume</a></li>
+                <li class="nav-item"><a class="nav-link" href="/Portfolio.html">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link active text-primary" href="/service.html">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+            </ul>
+            
+            <!-- CTA Button -->
+          
+        </div>
+    </div>
+</nav>
+
+
+<div>
+    <!-- Services Section -->
+<section class="py-5 bg-light">
+    <div class="container py-4">
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase" style="letter-spacing: 2px;">Our Expertise</h6>
+            <h2 class="display-6 fw-bold">Premium Services</h2>
+            <div class="mx-auto mt-3 bg-primary" style="width: 60px; height: 3px;"></div>
+        </div>
+        
+        <!-- Services Grid -->
+        <div class="row g-4">
+            <!-- Service 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm service-card text-center p-4 p-xl-5">
+                    <div class="bg-primary-subtle text-primary rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                        <i class="bi bi-laptop fs-1"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Web Development</h4>
+                    <p class="text-muted mb-4">Custom coded, fully responsive, and highly optimized web applications built with modern frameworks.</p>
+                    <a href="#" class="text-primary fw-bold text-decoration-none mt-auto">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+            
+            <!-- Service 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm service-card text-center p-4 p-xl-5">
+                    <div class="bg-success-subtle text-success rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                        <i class="bi bi-phone fs-1"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">Mobile Apps</h4>
+                    <p class="text-muted mb-4">Native and cross-platform mobile experiences designed to engage your users on iOS and Android.</p>
+                    <a href="#" class="text-success fw-bold text-decoration-none mt-auto">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+            
+            <!-- Service 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm service-card text-center p-4 p-xl-5">
+                    <div class="bg-warning-subtle text-warning rounded-circle mx-auto mb-4 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
+                        <i class="bi bi-palette fs-1"></i>
+                    </div>
+                    <h4 class="fw-bold mb-3">UI/UX Design</h4>
+                    <p class="text-muted mb-4">Beautiful, intuitive, and user-centric interfaces created to enhance customer journey and satisfaction.</p>
+                    <a href="#" class="text-warning fw-bold text-decoration-none mt-auto">Read More <i class="bi bi-arrow-right ms-1"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- Pricing Packages Section -->
+<section class="py-5 bg-light">
+    <div class="container py-4 py-md-5">
+        
+        <!-- Header -->
+        <div class="text-center mb-5">
+            <h6 class="text-primary fw-bold text-uppercase tracking-wide mb-2">Services</h6>
+            <h2 class="display-6 fw-bold mb-0">Freelance Packages</h2>
+        </div>
+        
+        <!-- Pricing Grid -->
+        <div class="row g-4 justify-content-center align-items-lg-center">
+            
+            <!-- Basic Tier -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border border-light shadow-sm rounded-4 h-100 hover-lift bg-white">
+                    <div class="card-body p-4 p-md-5 d-flex flex-column text-start">
+                        <h5 class="fw-bold text-muted mb-2 text-uppercase tracking-wide small">Starter</h5>
+                        <h2 class="display-4 fw-bold text-dark mb-4"></h2>
+                        <p class="text-muted mb-4 pb-3 border-bottom">Perfect for small businesses needing a simple online presence.</p>
+                        
+                        <ul class="list-unstyled mb-5 flex-grow-1">
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-success mt-1"></i> <span class="fw-medium">Custom 5-page Website</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-success mt-1"></i> <span class="fw-medium">Responsive Design</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-success mt-1"></i> <span class="fw-medium">Basic SEO Setup</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2 text-muted opacity-50"><i class="bi bi-dash-circle mt-1"></i> <span>E-Commerce Integration</span></li>
+                            <li class="d-flex align-items-start gap-2 text-muted opacity-50"><i class="bi bi-dash-circle mt-1"></i> <span>Priority Support</span></li>
+                        </ul>
+                        
+                        <a href="#" class="btn btn-outline-dark rounded-pill py-3 fw-bold w-100">Choose Starter</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Pro Tier (Highlighted) -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border-0 shadow-lg rounded-4 h-100 hover-lift bg-primary text-white position-relative pricing-featured" style="z-index: 1;">
+                    <!-- Badge -->
+                    <div class="position-absolute top-0 start-50 translate-middle-x bg-warning text-dark px-4 py-1 rounded-bottom-3 fw-bold small tracking-wide shadow-sm">MOST POPULAR</div>
+                    
+                    <div class="card-body p-4 p-md-5 d-flex flex-column text-start mt-3">
+                        <h5 class="fw-bold text-white-50 mb-2 text-uppercase tracking-wide small">Professional</h5>
+                        <h2 class="display-4 fw-bold text-white mb-4"></h2>
+                        <p class="text-white-50 mb-4 pb-3 border-bottom border-light border-opacity-25">Comprehensive solution for growing brands and stores.</p>
+                        
+                        <ul class="list-unstyled mb-5 flex-grow-1">
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-warning mt-1"></i> <span class="fw-medium">Custom 10-page Website</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-warning mt-1"></i> <span class="fw-medium">Advanced Animations</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-warning mt-1"></i> <span class="fw-medium">Full SEO Optimization</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-warning mt-1"></i> <span class="fw-medium">E-Commerce Setup (10 prods)</span></li>
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-warning mt-1"></i> <span class="fw-medium">1 Month Free Support</span></li>
+                        </ul>
+                        
+                        <a href="#" class="btn btn-light text-primary rounded-pill py-3 fw-bold w-100 shadow">Choose Professional</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enterprise Tier -->
+            <div class="col-md-6 col-lg-4">
+                <div class="card border border-light shadow-sm rounded-4 h-100 hover-lift bg-white">
+                    <div class="card-body p-4 p-md-5 d-flex flex-column text-start">
+                        <h5 class="fw-bold text-muted mb-2 text-uppercase tracking-wide small">Enterprise</h5>
+                        <h2 class="display-4 fw-bold text-dark mb-4"><span class="fs-4 text-muted">+</span></h2>
+                        <p class="text-muted mb-4 pb-3 border-bottom">Custom built web applications tailored to your business needs.</p>
+                        
+                        <ul class="list-unstyled mb-5 flex-grow-1">
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-success mt-1"></i> <span class="fw-medium">Unlimited Pages</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-success mt-1"></i> <span class="fw-medium">Custom Backend Database</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-success mt-1"></i> <span class="fw-medium">User Authentication</span></li>
+                            <li class="mb-3 d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-success mt-1"></i> <span class="fw-medium">Unlimited E-Commerce</span></li>
+                            <li class="d-flex align-items-start gap-2"><i class="bi bi-check-circle-fill text-success mt-1"></i> <span class="fw-medium">24/7 Priority Support</span></li>
+                        </ul>
+                        
+                        <a href="#" class="btn btn-outline-dark rounded-pill py-3 fw-bold w-100">Contact For Quote</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+.tracking-wide { letter-spacing: 1.5px; }
+.hover-lift { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.hover-lift:hover { transform: translateY(-5px); box-shadow: 0 1rem 3rem rgba(0,0,0,.15)!important; }
+
+/* Desktop scale for featured card */
+@media (min-width: 992px) {
+    .pricing-featured { transform: scale(1.05); }
+    .pricing-featured:hover { transform: scale(1.08) translateY(-5px); }
+}
+</style>
+
+
+
+
+
+<!-- CRL -->
+
+
+<!-- Recently Viewed Slider -->
+<section class="py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-end mb-4">
+            <h3 class="fw-bold mb-0">Recently Viewed</h3>
+            
+            <!-- Custom Slider Controls -->
+            <div class="d-flex gap-2">
+                <button class="btn btn-outline-secondary rounded-circle btn-sm shadow-sm d-flex justify-content-center align-items-center slider-btn" style="width: 36px; height: 36px;" onclick="document.getElementById('recentSlider').scrollBy({left: -270, behavior: 'smooth'})">
+                    <i class="bi bi-chevron-left"></i>
+                </button>
+                <button class="btn btn-outline-secondary rounded-circle btn-sm shadow-sm d-flex justify-content-center align-items-center slider-btn" style="width: 36px; height: 36px;" onclick="document.getElementById('recentSlider').scrollBy({left: 270, behavior: 'smooth'})">
+                    <i class="bi bi-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Horizontal Scroll Wrapper -->
+        <div class="d-flex overflow-auto pb-4 gap-4 hide-scrollbar" id="recentSlider" style="scroll-snap-type: x mandatory; scroll-behavior: smooth;">
+            
+            <!-- Product Card 1 -->
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0 product-card" style="width: 250px; scroll-snap-align: start;">
+                <a href="#" class="text-decoration-none text-dark">
+                    <img src="product1.jpg" alt="Product" class="card-img-top object-fit-cover rounded-top-4" style="height: 180px;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold text-truncate mb-1 hover-primary">Nike Air Max Red</h6>
+                        <p class="text-primary fw-bold mb-0">.99</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Product Card 2 -->
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0 product-card" style="width: 250px; scroll-snap-align: start;">
+                <a href="#" class="text-decoration-none text-dark">
+                    <img src="product2.jpg" alt="Product" class="card-img-top object-fit-cover rounded-top-4" style="height: 180px;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold text-truncate mb-1 hover-primary">Smart Watch S7</h6>
+                        <p class="text-primary fw-bold mb-0">.00</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Product Card 3 -->
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0 product-card" style="width: 250px; scroll-snap-align: start;">
+                <a href="#" class="text-decoration-none text-dark">
+                    <span class="badge bg-danger position-absolute top-0 start-0 m-2 z-1">SALE</span>
+                    <img src="product3.jpg" alt="Product" class="card-img-top object-fit-cover rounded-top-4" style="height: 180px;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold text-truncate mb-1 hover-primary">Running Sneakers Ultra</h6>
+                        <div class="d-flex gap-2">
+                            <span class="text-danger fw-bold">.99</span>
+                            <span class="text-muted text-decoration-line-through small align-self-center">.99</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Product Card 4 -->
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0 product-card" style="width: 250px; scroll-snap-align: start;">
+                <a href="#" class="text-decoration-none text-dark">
+                    <img src="product4.jpg" alt="Product" class="card-img-top object-fit-cover rounded-top-4" style="height: 180px;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold text-truncate mb-1 hover-primary">Premium logo</h6>
+                        <p class="text-primary fw-bold mb-0">.99</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Product Card 5 -->
+            <div class="card border-0 shadow-sm rounded-4 flex-shrink-0 product-card" style="width: 250px; scroll-snap-align: start;">
+                <a href="#" class="text-decoration-none text-dark">
+                    <img src="product5.jpg" alt="Product" class="card-img-top object-fit-cover rounded-top-4" style="height: 180px;">
+                    <div class="card-body p-3">
+                        <h6 class="fw-bold text-truncate mb-1 hover-primary">Classic logo</h6>
+                        <p class="text-primary fw-bold mb-0">.50</p>
+                    </div>
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- CSS -->
+<style>
+.hide-scrollbar::-webkit-scrollbar { display: none; }
+.hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+.hover-primary { transition: color 0.2s ease; }
+.hover-primary:hover { color: var(--bs-primary) !important; }
+
+.product-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+.product-card:hover { transform: translateY(-5px); box-shadow: 0 1rem 3rem rgba(0,0,0,.15)!important; }
+
+.slider-btn:hover { background-color: var(--bs-secondary); color: white; border-color: var(--bs-secondary); }
+</style>
+
+
+<!-- Availability CTA Section -->
+<section class="py-5 bg-white">
+    <div class="container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-9 col-xl-8 text-center">
+                
+                <div class="card border-0 bg-primary bg-opacity-10 rounded-4 shadow-sm p-4 p-md-5 p-xl-6 position-relative overflow-hidden">
+                    <!-- Background decorative icon -->
+                    <i class="bi bi-chat-quote-fill position-absolute top-50 start-50 translate-middle text-primary opacity-10" style="font-size: 15rem; z-index: 0;"></i>
+                    
+                    <div class="position-relative z-1">
+                        <!-- Pulsing Status Badge -->
+                        <div class="d-inline-flex align-items-center gap-2 bg-white px-4 py-2 rounded-pill shadow-sm mx-auto mb-4">
+                            <div class="spinner-grow text-success" style="width: 0.8rem; height: 0.8rem;" role="status">
+                                <span class="visually-hidden">Available</span>
+                            </div>
+                            <span class="fw-bold text-dark small tracking-wide text-uppercase">Available for Work</span>
+                        </div>
+                        
+                        <h2 class="display-5 fw-bold text-dark mb-4">Let's Build Something Amazing Together</h2>
+                        <p class="lead text-muted mb-5 lh-base px-md-4">I'm currently taking on new projects. If you have an exciting idea or need help scaling your platform, I'd love to hear about it!</p>
+                        
+                        <div class="d-flex justify-content-center gap-3 flex-column flex-sm-row">
+                            <a href="mailto:hello@example.com" class="btn btn-primary rounded-pill py-3 px-5 fw-bold shadow hover-lift">
+                                <i class="bi bi-envelope me-2"></i> hello@example.com
+                            </a>
+                            <a href="#" class="btn btn-outline-dark rounded-pill py-3 px-5 fw-bold hover-lift bg-white">
+                                Schedule a Call
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+
+</div>
+
+
+<!-- Big Custom Footer -->
+<footer class="bg-dark text-light pt-5 pb-4 mt-5">
+    <div class="container">
+        <div class="row gy-5">
+            
+            <!-- Column 1: Brand & About -->
+            <div class="col-lg-4 col-md-6">
+                <h5 class="fw-bold text-white mb-3"><i class="bi bi-hexagon-fill text-primary me-2"></i>mehtik</h5>
+                <p class="text-secondary small mb-4">We provide high-quality digital solutions to help businesses grow and scale effectively. Innovate with us and reach new heights.</p>
+                <div class="d-flex gap-2">
+                    <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-linkedin"></i></a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary rounded-circle"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            
+            <!-- Column 2: Quick Links -->
+            <div class="col-lg-2 col-md-6">
+                <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Quick Links</h6>
+                <ul class="list-unstyled small text-secondary d-flex flex-column gap-2">
+                    <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">About Us</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Our Services</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Portfolio Projects</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Contact Support</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none hover-white transition-all">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <!-- Column 3: Contact Info -->
+            <div class="col-lg-3 col-md-6">
+                <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Contact Info</h6>
+                <ul class="list-unstyled small text-secondary d-flex flex-column gap-3">
+                    <li class="d-flex gap-3 align-items-start">
+                        <i class="bi bi-geo-alt fs-5 text-primary"></i> 
+                        <span>123 Innovation Ave, Tech City,<br>New York 10001</span>
+                    </li>
+                    <li class="d-flex gap-3 align-items-center">
+                        <i class="bi bi-envelope fs-5 text-primary"></i> 
+                        <span>support@brandlogo.com</span>
+                    </li>
+                    <li class="d-flex gap-3 align-items-center">
+                        <i class="bi bi-telephone fs-5 text-primary"></i> 
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Column 4: Newsletter -->
+            <div class="col-lg-3 col-md-6">
+                <h6 class="text-white mb-3 text-uppercase fw-bold tracking-wide">Newsletter</h6>
+                <p class="text-secondary small mb-3">Subscribe to receive updates, access to exclusive deals, and more.</p>
+              
+                <div class="form-text text-secondary mt-2" style="font-size: 0.7rem;">We respect your privacy. No spam.</div>
+            </div>
+            
+        </div>
+        
+        <!-- Simple Footer Copyright -->
+        <hr class="border-secondary mt-5 mb-4">
+        <div class="row align-items-center">
+            <div class="col-md-6 text-center text-md-start small text-secondary mb-3 mb-md-0">
+                &copy; 2026 mehtik. All rights reserved.
+            </div>
+            <div class="col-md-6 text-center text-md-end small">
+                <a href="#" class="text-secondary text-decoration-none me-3 hover-white">Terms of Service</a>
+                <a href="#" class="text-secondary text-decoration-none hover-white">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
